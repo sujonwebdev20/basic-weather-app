@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="search_area">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search by city name..."
+        />
+        <button id="search_btn">Search</button>
+      </div>
+      <div id="inner_weather_app">
+        <div id="left_area">
+          <!-- <h2>Your Search Result</h2> -->
+          <div id="left">
+            <div id="condition_icon">
+              <img id="icon" src="./img/sun.png" alt="" />
+            </div>
+            <h3 id="city">City Name</h3>
+            <p id="condition">Clear</p>
+            <div id="w_details">
+              Temp: <span id="temp">123</span> °C, Pressure:
+              <span id="pressure">123</span>, Humidity:
+              <span id="humidity">123</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="right_area">
+          <h2>Recent Search History</h2>
+          <div id="card_container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

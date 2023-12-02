@@ -1,0 +1,76 @@
+@import "./common";
+
+#search_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  input,
+  button {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0.849);
+    color: #000;
+  }
+  button {
+    cursor: pointer;
+    background-color: orange;
+  }
+}
+
+#container {
+  h2 {
+    text-align: center;
+    margin: 5px;
+  }
+  padding: 3vw;
+  #inner_weather_app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    #left_area {
+      width: 80%;
+      // display: none;
+      #left {
+        background-color: #ffffff61;
+        width: 100%;
+        // height: 40%;
+        text-align: center;
+        border-radius: 15px;
+        padding: 25px 18px;
+        margin-bottom: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+    #right_area {
+      margin-left: 20px;
+      width: 100%;
+      #card_container {
+        background-color: rgb(95, 158, 160);
+        height: 438px;
+        // overflow: auto;
+        border-radius: 10px;
+        padding: 10px;
+        scroll-snap-type: y mandatory;
+        img {
+          width: 55px;
+        }
+        #card_parent {
+          scroll-snap-align: center;
+        }
+      }
+      .history_card {
+        background-color: #ffffff61;
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
